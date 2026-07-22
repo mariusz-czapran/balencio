@@ -1,74 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balencio: Bank Balance Sim</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; }
-        header { background-color: #000; color: #fff; padding: 40px 20px; text-align: center; }
-        header img { width: 120px; border-radius: 24px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .description { font-size: 1.2em; text-align: center; color: #555; margin-bottom: 40px; }
-        .features { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 40px; }
-        .feature-item { background: #fff; padding: 20px; border-radius: 12px; border: 1px solid #eee; }
-        .feature-item strong { display: block; font-size: 1.1em; margin-bottom: 5px; color: #000; }
-        .screenshots { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 40px; }
-        .screenshots img { width: 280px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .note { background-color: #fff3cd; border-left: 5px solid #ffeeba; padding: 20px; margin-top: 40px; font-style: italic; border-radius: 8px; }
-        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9em; }
-        a { color: #007bff; text-decoration: none; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Balencio is a wealth, stock, and crypto simulator for mobile devices." />
+  <meta name="theme-color" content="#111111" />
+  <title>Balencio — Simulate your fortune</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Balencio home">
+      <img class="brand-logo" src="assets/logo.png" alt="Balencio">
+    </a>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#career">Career Mode</a>
+      <a href="#premium">Premium</a>
+      <a href="#download">Download</a>
+    </nav>
+    <a class="header-button" href="https://play.google.com/store/apps/details?id=com.balencio.app" target="_blank" rel="noopener noreferrer">Google Play</a>
+  </header>
 
-<header>
-    <img src="Balencio.png" alt="Balencio Logo">
-    <h1>Balencio: Bank Balance Sim</h1>
-    <p>Wealth and crypto portfolio simulator.</p>
-</header>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">WEALTH & PORTFOLIO SIMULATOR</span>
+        <h1>Build your simulated fortune.</h1>
+        <p class="lead">
+          Balencio lets you simulate wealth, manage virtual stocks and crypto,
+          progress through Career Mode, and climb global rankings — all from your phone.
+        </p>
 
-<div class="container">
-    <p class="description">
-        Ever wanted to feel like a millionaire? Use Balencio to show your friends a custom bank balance for entertainment. Balencio is a wealth and crypto portfolio simulator designed for mobile devices.
-    </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="https://play.google.com/store/apps/details?id=com.balencio.app" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+        </div>
 
-    <h2>Key Features</h2>
-    <div class="features">
-        <div class="feature-item">
+        <div class="hero-tags">
+          <span>Custom balance</span>
+          <span>Stocks & crypto</span>
+          <span>Career Mode</span>
+          <span>Global rankings</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="glow glow-a"></div>
+        <div class="glow glow-b"></div>
+
+        <div class="phone phone-main">
+          <img src="assets/dashboard.png" alt="Balencio dashboard screen">
+        </div>
+
+        <div class="phone phone-secondary">
+          <img src="assets/career.png" alt="Balencio career mode screen">
+        </div>
+
+        <div class="floating-card floating-card-a">
+          <strong>Career Mode</strong>
+          <span>Start with $1,000 and grow your virtual wealth.</span>
+        </div>
+
+        <div class="floating-card floating-card-b">
+          <strong>Global Rankings</strong>
+          <span>Sync progress and compete worldwide.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement section-shell">
+      <div class="statement-grid">
+        <div class="statement-copy reveal">
+          <span class="eyebrow">WHAT IS BALENCIO?</span>
+          <h2>A finance simulator designed for entertainment.</h2>
+          <p>
+            Create a custom balance, simulate investment portfolios, schedule fake income notifications,
+            and explore a clean banking-style interface — while keeping everything fully virtual.
+          </p>
+        </div>
+
+        <div class="stat-cards reveal">
+          <div class="stat-card">
             <strong>Custom Balance</strong>
-            Set any amount in your main account to show off in seconds.
+            <span>Set any amount in your main account.</span>
+          </div>
+          <div class="stat-card">
+            <strong>Portfolio Simulation</strong>
+            <span>Track virtual stocks and cryptocurrencies.</span>
+          </div>
+          <div class="stat-card">
+            <strong>Level Progression</strong>
+            <span>Advance from Level 1 to Level 10 in Career Mode.</span>
+          </div>
         </div>
-        <div class="feature-item">
-            <strong>Crypto Portfolio</strong>
-            Simulate holdings like Bitcoin, Ethereum, and more in a modern interface.
+      </div>
+    </section>
+
+    <section class="feature-grid section-shell" id="features">
+      <article class="feature-card reveal">
+        <div class="feature-icon">◎</div>
+        <h3>Custom wealth display</h3>
+        <p>Set your account balance and present a premium-looking banking experience directly on your device.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">₿</div>
+        <h3>Crypto simulation</h3>
+        <p>Simulate holdings such as Bitcoin, Ethereum, and other supported crypto assets in a modern interface.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">↗</div>
+        <h3>Stock simulation</h3>
+        <p>Build a virtual stock portfolio and monitor how your simulated holdings grow over time.</p>
+      </article>
+
+      <article class="feature-card reveal">
+        <div class="feature-icon">⏱</div>
+        <h3>Scheduled income</h3>
+        <p>Plan simulated income notifications and trigger them at the moment you choose.</p>
+      </article>
+    </section>
+
+    <section class="showcase section-shell" id="career">
+      <div class="showcase-visual reveal soft-panel">
+        <div class="phone single-phone">
+          <img src="assets/career.png" alt="Balencio career mode and rankings">
         </div>
-        <div class="feature-item">
-            <strong>Schedule Income</strong>
-            Set a timer to receive a simulated deposit notification on your device.
+      </div>
+
+      <div class="showcase-copy reveal">
+        <span class="eyebrow">CAREER MODE</span>
+        <h2>Turn a small start into a virtual empire.</h2>
+        <p>
+          Begin with an initial $1,000, trade virtual assets, increase your simulated wealth,
+          and unlock progress from Level 1 to Level 10.
+        </p>
+        <ul class="check-list">
+          <li>Start from Level 1</li>
+          <li>Build wealth through simulated trading</li>
+          <li>Sync progress to the cloud</li>
+          <li>Compete in global rankings</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="showcase reverse section-shell">
+      <div class="showcase-copy reveal">
+        <span class="eyebrow">PORTFOLIO VIEWS</span>
+        <h2>Switch between banking, crypto, stocks, and transfers.</h2>
+        <p>
+          Balencio gives you multiple screens for wealth presentation, from a clean dashboard
+          to crypto, stocks, and scheduled income sections.
+        </p>
+      </div>
+
+      <div class="multi-panel reveal">
+        <div class="stack-card stack-card-top">
+          <img src="assets/crypto_dark.png" alt="Balencio crypto screen">
         </div>
-        <div class="feature-item">
-            <strong>Minimalist Design</strong>
-            Dark and light mode options inspired by high-end banking interfaces.
+        <div class="stack-card stack-card-bottom">
+          <img src="assets/stocks.png" alt="Balencio stocks screen">
         </div>
-    </div>
+      </div>
+    </section>
 
-    <h2>App Gallery</h2>
-    <div class="screenshots">
-        <img src="Balencio_Screen_1.png" alt="Dashboard View">
-        <img src="Balencio_Screen_2.png" alt="Crypto Portfolio View">
-        <img src="Balencio_Screen_3.png" alt="Transfer Schedule View">
-    </div>
+    <section class="showcase section-shell">
+      <div class="showcase-visual reveal light-panel">
+        <div class="phone single-phone">
+          <img src="assets/schedule.png" alt="Balencio scheduled income screen">
+        </div>
+      </div>
 
-    <div class="note">
-        <strong>Please note:</strong> Balencio is a tool for entertainment and pranks. It is NOT a real banking or crypto app. No real money or cryptocurrency is stored, transferred, or generated within this app.
-    </div>
-</div>
+      <div class="showcase-copy reveal">
+        <span class="eyebrow">SCHEDULED INCOME</span>
+        <h2>Plan fake income notifications.</h2>
+        <p>
+          Choose the amount, date, and time, then let Balencio display a simulated deposit notification
+          when the moment arrives.
+        </p>
+      </div>
+    </section>
 
-<footer>
-    &copy; 2026 OneMan Foundry. Mariusz Czapran. All rights reserved.<br>
-    <a href="privacy-policy.html">Privacy Policy</a> | <a href="app-ads.txt">app-ads.txt</a>
-</footer>
+    <section class="premium-section" id="premium">
+      <div class="section-shell premium-grid">
+        <div class="premium-copy reveal">
+          <span class="eyebrow light">PREMIUM OPTION</span>
+          <h2>Upgrade once, keep the cleaner experience.</h2>
+          <p>
+            Balencio includes ads. You can upgrade to Premium for <strong>$0.99</strong>
+            or the equivalent in your local currency to remove ads and unlock premium features.
+          </p>
+        </div>
 
+        <div class="premium-card reveal">
+          <div class="premium-price">$0.99</div>
+          <div class="premium-list">
+            <div>Remove ads</div>
+            <div>Enable premium features</div>
+            <div>One-time upgrade</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disclaimer section-shell reveal">
+      <span class="eyebrow">IMPORTANT</span>
+      <h2>Balencio is a simulator.</h2>
+      <p>
+        Balencio is designed for entertainment and educational purposes. It is not a real banking,
+        brokerage, or cryptocurrency application. No real money, stocks, or cryptocurrencies are stored,
+        traded, transferred, or generated inside the app. All balances, transactions, rankings,
+        and portfolios are fully simulated.
+      </p>
+    </section>
+
+    <section class="download section-shell" id="download">
+      <div class="download-card reveal">
+        <div class="download-copy">
+          <span class="eyebrow">DOWNLOAD</span>
+          <h2>Try Balencio on Android.</h2>
+          <p>Explore simulated wealth, custom balances, portfolio views, and Career Mode on your phone.</p>
+          <a class="primary-button" href="https://play.google.com/store/apps/details?id=com.balencio.app" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <img class="brand-logo footer-logo" src="assets/logo.png" alt="Balencio">
+    <p>Balencio — a wealth, stock, and crypto simulator for mobile devices.</p>
+    <p>© <span id="year"></span> Balencio</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
